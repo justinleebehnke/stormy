@@ -14,6 +14,6 @@ public class DailyForecastActivity extends ListActivity {
         setContentView(R.layout.activity_daily_forecast);
 
         String[]  daysOfTheWeek = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
-        
+
     }
 }
