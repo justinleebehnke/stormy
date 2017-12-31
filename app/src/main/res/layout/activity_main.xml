@@ -7,9 +7,8 @@
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    tools:context="com.example.justin.stormy.MainActivity"
-    android:background="#FFFC970B">
+    tools:context="com.example.justin.stormy.ui.MainActivity"
+    android:background="@drawable/bg_gradient">
 
     <TextView
         android:id="@+id/temperatureLabel"
@@ -149,5 +148,32 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/iconImageView"
         android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/hourlyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#40FFFFFF"
+            android:text="HOURLY"
+            android:textColor="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/dailyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#40FFFFFF"
+            android:text="7 DAY"
+            android:textColor="#FFFFFFFF"
+            android:layout_marginLeft="2dp"/>
+    </LinearLayout>
 
 </RelativeLayout>
